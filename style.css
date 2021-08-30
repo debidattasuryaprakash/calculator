@@ -243,3 +243,165 @@ button:hover
     cursor: pointer;
     color: #0b254e;
 }
+
+
+
+/* -------------------DARK MODE-------------------- */
+
+body.dark {
+	background: #2b2c2c;
+}
+
+body.dark .iphone-x .screen
+{    
+    background: #1e1e1f;
+    box-shadow: 
+    12px 12px 32px rgba(26, 27, 27, 0.25),
+    -10px 10px 15px rgb(29, 28, 28);
+    border: 8px solid #1e1e1f;    
+}
+
+
+
+
+body.dark .screen .notch
+{    
+    background: #191b1de1;    
+}
+
+body.dark .sound
+{
+    background: rgb(153, 152, 152);
+}
+body.dark .camera
+{    
+    background: rgb(173, 171, 171);
+}
+body.dark .time
+{
+    color: #ededed;
+}
+
+body.dark .battery i
+{
+    color: #ededed;
+    margin-left: 230px !important;
+}
+
+body.dark .wifi i
+{
+    color: #ededed;
+}
+
+body.dark .area
+{
+    color: #dddddd;
+    background: #292b2b;
+    font-weight: 400;
+    box-shadow: 
+    6px 6px 8px rgba(23, 23, 24, 0.25),
+    -6px -6px 10px rgb(32, 30, 30),
+    inset -8px -8px 12px rgba(44, 41, 41, 0.7),
+    inset 5px 5px 8px rgba(18, 18, 19, 0.2);
+}
+
+body.dark button
+{
+    background:#2c2e2e;
+    color: #c2c3c3 !important;   
+    box-shadow: 
+    4px 4px 8px rgba(40, 41, 43, 0.25),
+    -4px 4px 8px rgb(24, 23, 23);
+}
+body.dark .btn-work
+{
+    color: #0feba1 !important;
+}
+body.dark .btn-equal
+{
+    background:#10eb90;
+    color: #f9fafc !important;
+    height: 120px !important;
+}
+
+body.dark button:active
+{
+    box-shadow: 
+    -3px -3px 7px #3f3e3e32,
+    3px 3px 5px rgba(42, 42, 43, 0.417);
+    
+}
+body.dark button:hover
+{
+    background:#10eb90;
+    color: #ecf1f1 !important;
+}
+body.dark .btn-work:hover,
+body.dark .btn-equal:hover
+{
+    background:#f7f6f5;
+    color:#1dfc9f !important;
+}
+body.dark .home
+{
+    color: #f0f5f3;
+}
+body.dark .menu
+{
+    color: #b4b8b8;
+}
+body.dark .back
+{
+    color: #b6b6b8;
+}
+
+.dark-toggle{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.checkbox {
+	opacity: 0;
+    position: relative;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
